@@ -4,7 +4,7 @@ from agents import Agent, Runner, AsyncOpenAI, OpenAIChatCompletionsModel
 from agents.run import RunConfig
 from game_tools import roll_dice, generate_event
 
-gemini_key = "AIzaSyAdxJObQdZ-qoDS35s9d3nyf7WwvPDd3e0"
+gemini_key = ""#add your own gemini key
 
 load_dotenv()
 client = AsyncOpenAI(
@@ -39,7 +39,6 @@ item_agnet = Agent(
     instructions="You provide rewards or item to player.",
     model=model
 )
-
 
 def main():
     print("\U0001F3AE Welcome to Fantasy Game!")
